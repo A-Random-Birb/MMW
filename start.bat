@@ -15,6 +15,7 @@ curl -d "content=%msg%" %url%
 goto start
 
 :fts
+mkdir resources
 echo You have entered the first time setup. If you dont have a Discord Webhook url, then pleasde check README.txt for more informations
 set /p seturl="Please enter the webhook URL: "
 echo %seturl% > resources\url.txt
