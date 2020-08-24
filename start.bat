@@ -21,6 +21,7 @@ goto start
 : : literally just echos the response into url.txt
 echo You have entered the first time setup. If you dont have a Discord Webhook url, then check README.md for more information
 set /p seturl="Please enter the webhook URL: "
+mkdir resources
 echo %seturl% > resources\url.txt
 echo Setup complete, starting main program
 pause
