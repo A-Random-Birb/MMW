@@ -1,0 +1,3 @@
+"curl: (6) Could not resolve host: discordapp.com"
+Meaning: Could not connect to the server
+Solution: Make sure you are connected to the internet or Discord isnt down (you can check at status.discordapp.com)

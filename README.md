@@ -16,3 +16,6 @@ In discord, press the arrow to the right of the server name in the top right cor
 USING THE PROGRAM
 
 On your webhook, press the “Copy Webhook URL” button. Then, open url.txt from this folder, paste the URL, save it, and close it. Now, open start.bat. when you type a message and press enter, the message will be sent as your webhook in the channel you specified
+
+Have a question or an error? Want help? Join the discord!
+https://discord.gg/4PwsWa (wip)
