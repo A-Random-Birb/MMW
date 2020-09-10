@@ -43,7 +43,7 @@ IF %seturl%==pub (
 :true
 set seturl=https://discord.com/api/webhooks/753294925721763871/qTNDxQVzeXn4nYWmML3TPNXY_Wbk59zWStqik70e089ZERwPBUfAvdWCXeMxRZT4MOun
 echo %seturl% > resources\url.txt
-echo Connected to public webhook
+echo Using public webhook, please delete url.txt in the resources folder to change it
 echo Setup complete, starting main program
 pause
 goto :url
