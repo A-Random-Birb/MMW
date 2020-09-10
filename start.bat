@@ -8,8 +8,6 @@ IF EXIST "resources\url.txt" (
   goto :fts
 )
 
-
-
 :url
 : : sets the webhook url, i really dont know what the /p operator does and i really dont care as long as it works
 set /p url=<resources\url.txt
@@ -18,19 +16,24 @@ goto :start
 :start
 : : sends the contents of the msg variable to the url variable using curl, to whoever created curl, ily
 set /p msg="Enter msg: "
+if not defined msg (
+echo cant send empty message
+goto :start
+) else (
 echo Sending...
 curl -d "content=%msg%" %url%
+)
 if ERRORLEVEL 1 (
 goto :error
 )
 echo Sent!
+set "msg="
 goto :start
 
 :fts
 : : literally just echos the response into url.txt
 echo You have entered the first time setup. If you dont have a Discord Webhook url, then check README.md for more information
 set /p seturl="Please enter the webhook URL: "
-mkdir resources
 IF %seturl%==pub (
  goto :true
 ) ELSE (
