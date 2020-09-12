@@ -21,7 +21,7 @@ echo cant send empty message
 goto :start
 ) else (
 echo Sending...
-curl -d "content=%msg%" %url%
+resources\curl -d "content=%msg%" %url%
 )
 if ERRORLEVEL 1 (
 goto :error
